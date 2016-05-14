@@ -269,7 +269,7 @@ inline int ipanic_next_write(fn_next next, void *data, int off, int total, int e
 	return ipanic_func_write(next, data, off, total, encrypt);
 }
 
-inline int ipanic_mem_write(void *buf, int off, int len, int encrypt)
+extern int ipanic_mem_write(void *buf, int off, int len, int encrypt)
 {
 	struct ipanic_memory_block mem_info = {
 		.kstart = (unsigned long)buf,
