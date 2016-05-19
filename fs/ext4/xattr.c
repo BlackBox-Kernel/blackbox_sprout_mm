@@ -198,6 +198,7 @@ ext4_xattr_check_names(struct ext4_xattr_entry *entry, void *end,
 		if ((void *)next >= end)
 			return -EIO;
 		e = next;
+
 	}
 
 	while (!IS_LAST_ENTRY(entry)) {
